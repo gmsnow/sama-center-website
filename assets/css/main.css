@@ -1,4 +1,3 @@
-
 /* demo */
 
 /*--------------------------------------------------------------
@@ -7,28 +6,28 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Nunito",  sans-serif;
-  --nav-font: "Inter",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Nunito", sans-serif;
+  --nav-font: "Inter", sans-serif;
 }
 .text-center {
   display: none;
 }
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
+:root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #3d4348; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #3e5055; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #388da8; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-
-
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #313336;  /* The default color of the main navmenu links */
+  --nav-color: #313336; /* The default color of the main navmenu links */
   --nav-hover-color: #77b6ca; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -57,7 +56,7 @@
   width: 100%;
   height: 100vh;
   z-index: 9;
-  background-image: url('../img/doctor-helping-boy-physiotherapy-medium-shot.jpg');
+  background-image: url("../img/doctor-helping-boy-physiotherapy-medium-shot.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -112,7 +111,10 @@
   transition: all 0.4s;
   border: none;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to left, #6AF0DB 0%, #5FB4F0 100%), linear-gradient(to bottom, #6AF0DB 0%, #6AF0DB 100%), linear-gradient(to right, #5FB4F0 0%, #6AF0DB 100%), linear-gradient(to top, #5FB4F0 0%, #5FB4F0 100%);
+  background-image: linear-gradient(to left, #6af0db 0%, #5fb4f0 100%),
+    linear-gradient(to bottom, #6af0db 0%, #6af0db 100%),
+    linear-gradient(to right, #5fb4f0 0%, #6af0db 100%),
+    linear-gradient(to top, #5fb4f0 0%, #5fb4f0 100%);
   overflow: hidden;
   z-index: 1;
   background-position: 0 0, 100% 0, 100% 100%, 0 100%;
@@ -132,7 +134,10 @@
   top: 0;
   left: 0;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to left, #6AF0DB 0%, #5FB4F0 100%), linear-gradient(to bottom, #6AF0DB 0%, #6AF0DB 100%), linear-gradient(to right, #5FB4F0 0%, #6AF0DB 100%), linear-gradient(to top, #5FB4F0 0%, #5FB4F0 100%);
+  background-image: linear-gradient(to left, #6af0db 0%, #5fb4f0 100%),
+    linear-gradient(to bottom, #6af0db 0%, #6af0db 100%),
+    linear-gradient(to right, #5fb4f0 0%, #6af0db 100%),
+    linear-gradient(to top, #5fb4f0 0%, #5fb4f0 100%);
   background-position: 0 0, 100% 0, 100% 100%, 0 100%;
   background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
 }
@@ -148,7 +153,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
-  background-image: linear-gradient(to left, #6AF0DB 0%, #5FB4F0 100%);
+  background-image: linear-gradient(to left, #6af0db 0%, #5fb4f0 100%);
   transition: all 0.4s;
   z-index: -1;
 }
@@ -250,7 +255,9 @@ body {
   transform-origin: left;
 }
 @keyframes scroll {
-  to { scale: 1 1;}
+  to {
+    scale: 1 1;
+  }
 }
 
 a {
@@ -362,9 +369,8 @@ h6 {
 }
 .traction {
   width: 30px;
- 
 }
-.tens img{
+.tens img {
   background-color: #059652;
 }
 #book {
@@ -381,17 +387,17 @@ h6 {
   flex-direction: column;
 }
 ::placeholder {
-position: absolute;
-right: 0;
-margin-right: 10px;
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
 }
 #additional {
   width: 205%;
 }
-.form .submit  {
-margin-top: 350px;
-position: relative;
-left: -60px;
+.form .submit {
+  margin-top: 350px;
+  position: relative;
+  left: -60px;
 }
 .form-input {
   border-top: transparent;
@@ -400,14 +406,14 @@ left: -60px;
   transition: 1s ease;
 }
 .form-input:focus {
-  outline: 1px solid skyblue ;
+  outline: 1px solid skyblue;
   border-radius: 2px;
 }
 @media (max-width: 706px) {
   .form {
     grid-template-columns: 1fr;
     row-gap: 10px;
-  } 
+  }
   .number {
     position: relative;
     top: 20px;
@@ -416,11 +422,11 @@ left: -60px;
     max-height: 700px;
   }
   .form .submit {
-  align-self: center;
-  justify-self: center;
-  position: relative;
-  top: -290px;
-  left: 15px;
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    top: -290px;
+    left: 15px;
   }
   #additional {
     width: 100%;
@@ -451,7 +457,7 @@ textarea {
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
 
-@media  (max-width: 1200px) {
+@media (max-width: 1200px) {
   .header .logo {
     order: 1;
   }
@@ -533,7 +539,7 @@ textarea {
     padding-right: 0;
   }
 
-  .navmenu li:hover>a,
+  .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
@@ -572,11 +578,11 @@ textarea {
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover>a {
+  .navmenu .dropdown ul li:hover > a {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .dropdown:hover>ul {
+  .navmenu .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -588,7 +594,7 @@ textarea {
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover>ul {
+  .navmenu .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -621,7 +627,7 @@ textarea {
   }
 
   .navmenu .megamenu ul li a,
-  .navmenu .megamenu ul li:hover>a {
+  .navmenu .megamenu ul li:hover > a {
     padding: 10px 20px;
     font-size: 15px;
     color: var(--nav-dropdown-color);
@@ -633,7 +639,7 @@ textarea {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .megamenu:hover>ul {
+  .navmenu .megamenu:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -734,7 +740,7 @@ textarea {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown>.dropdown-active {
+  .navmenu .dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -761,7 +767,7 @@ textarea {
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu>ul {
+  .mobile-nav-active .navmenu > ul {
     display: block;
   }
 }
@@ -886,7 +892,7 @@ textarea {
   border-color: var(--accent-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type=email] {
+.footer .footer-newsletter .newsletter-form input[type="email"] {
   border: 0;
   padding: 4px 10px;
   width: 100%;
@@ -894,11 +900,11 @@ textarea {
   color: var(--default-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
+.footer .footer-newsletter .newsletter-form input[type="email"]:focus-visible {
   outline: none;
 }
 
-.footer .footer-newsletter .newsletter-form input[type=submit] {
+.footer .footer-newsletter .newsletter-form input[type="submit"] {
   border: 0;
   font-size: 16px;
   padding: 0 20px;
@@ -909,14 +915,15 @@ textarea {
   border-radius: 50px;
 }
 
-.footer .footer-newsletter .newsletter-form input[type=submit]:hover {
+.footer .footer-newsletter .newsletter-form input[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
 .footer .copyright {
   padding-top: 25px;
   padding-bottom: 25px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .copyright p {
@@ -1041,11 +1048,11 @@ textarea {
   font-size: 14px;
 }
 
-.page-title .breadcrumbs ol li+li {
+.page-title .breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.page-title .breadcrumbs ol li+li::before {
+.page-title .breadcrumbs ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -1065,7 +1072,6 @@ section,
 }
 
 @media (max-width: 1199px) {
-
   section,
   .section {
     scroll-margin-top: 66px;
@@ -1118,7 +1124,6 @@ section,
   align-items: center;
   overflow: hidden;
 }
-
 
 .hero .hero-bg::before {
   content: "";
@@ -1452,7 +1457,7 @@ section,
 /*--------------------------------------------------------------
 # Features Details Section
 --------------------------------------------------------------*/
-.features-details .features-item+.features-item {
+.features-details .features-item + .features-item {
   margin-top: 60px;
 }
 
@@ -1797,7 +1802,6 @@ section,
   padding-bottom: 20px;
 } */
 
-
 /* 
 .faq .faq-container .faq-item {
   position: relative;
@@ -2028,7 +2032,7 @@ section,
   .image-text p {
     font-size: 15px;
   }
- }
+}
 @media (max-width: 575px) {
   .contact .php-email-form {
     padding: 20px;
@@ -2041,8 +2045,8 @@ section,
   }
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
 .contact .php-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
@@ -2053,19 +2057,19 @@ section,
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form input[type="text"]:focus,
+.contact .php-email-form input[type="email"]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form input[type="text"]::placeholder,
+.contact .php-email-form input[type="email"]::placeholder,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -2074,7 +2078,7 @@ section,
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
@@ -2087,14 +2091,15 @@ section,
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
-.service-details .service-box+.service-box {
+.service-details .service-box + .service-box {
   margin-top: 30px;
 }
 
 .service-details .service-box h4 {
   font-size: 20px;
   font-weight: 700;
-  border-bottom: 2px solid color-mix(in srgb, var(--default-color), transparent 92%);
+  border-bottom: 2px solid
+    color-mix(in srgb, var(--default-color), transparent 92%);
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
@@ -2143,7 +2148,8 @@ section,
   align-items: center;
   padding: 10px 0;
   transition: 0.3s;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .service-details .download-catalog a:first-child {
@@ -2211,4 +2217,3 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
-
